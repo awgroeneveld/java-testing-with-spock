@@ -91,12 +91,13 @@
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-all</artifactId>
-			<version>2.4.7</version>
+			<version>2.5.4</version>
+			<type>pom</type>
 		</dependency>
 		<dependency>
 			<groupId>org.spockframework</groupId>
 			<artifactId>spock-core</artifactId>
-			<version>1.0-groovy-2.4</version>
+			<version>1.2-groovy-2.5</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -178,21 +179,21 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.8.0</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.gmavenplus</groupId>
 				<artifactId>gmavenplus-plugin</artifactId>
-				<version>1.4</version>
+				<version>1.6.2</version>
 				<executions>
 					<execution>
 						<goals>
 							<goal>compile</goal>
-							<goal>testCompile</goal>
+							<goal>compileTests</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -201,8 +202,8 @@
 		</plugins>
 	</build>
 	<properties>
-		<gebVersion>0.13.1</gebVersion>
-		<seleniumVersion>2.53.1</seleniumVersion>
+		<gebVersion>2.3.1</gebVersion>
+		<seleniumVersion>3.141.59</seleniumVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
